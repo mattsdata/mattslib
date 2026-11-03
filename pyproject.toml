@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "mattslib"
-version = "1.0.0"
+version = "1.1.0"
 description = "A small, well-tested library of reusable Python utilities: retries, logging, config, caching, timing and safe file I/O."
 readme = "README.md"
 license = "MIT"

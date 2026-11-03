@@ -7,11 +7,11 @@
 ![Dependencies](https://img.shields.io/badge/runtime%20deps-0-success)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-*Author: **Mathew Varghese** · Version 1.0*
+*Author: **Mathew Varghese** · Version 1.1*
 
 **A small, well-tested library of Python utilities I reuse across projects** — the pieces
 almost every production service needs and almost every team rewrites: retries, structured
-logging, typed config, caching, timing and safe file I/O.
+logging, typed config, caching, timing, safe file I/O and plugin registries.
 
 Design principles:
 
@@ -37,6 +37,7 @@ pip install "git+https://github.com/mattsdata/mattslib.git"
 | `mattslib.cache` | Caching values that go stale | `@ttl_cache` |
 | `mattslib.timing` | Measuring slow code | `Timer`, `@timed` |
 | `mattslib.files` | Crash-safe writes, hashing, batching | `atomic_write()`, `file_hash()`, `chunked()` |
+| `mattslib.registry` | Choosing an implementation by name (plugins, backends) | `Registry` |
 
 ## Quick tour
 

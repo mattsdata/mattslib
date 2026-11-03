@@ -4,7 +4,7 @@
 #  File         : src/mattslib/__init__.py
 #  Author       : Mathew Varghese <removed@example.invalid>
 #  Created      : 2026-11-03
-#  Version      : V1.0
+#  Version      : V1.1
 #  License      : MIT (see LICENSE)
 # --------------------------------------------------------------------------------------------------
 #  🎯 PURPOSE
@@ -23,12 +23,16 @@
 #    cache   - in-memory cache with expiry (TTL) and size limit
 #    timing  - measure how long code takes
 #    files   - atomic writes, file hashing, batching
+#    registry - typed plugin registry with lazily imported built-ins
 #
 #  📂 VERSION HISTORY
 #
 #    V1.0 (2026-11-03) - Mathew Varghese
 #      - Initial release of mattslib with six core modules.
 #      - Public API re-exported from the package root.
+#
+#    V1.1 (2026-11-03) - Mathew Varghese
+#      - Added Registry (plugin registry), extracted from AI Lab's vision package.
 # ==================================================================================================
 """mattslib: reusable, well-tested Python utilities with zero runtime dependencies."""
 
@@ -39,13 +43,14 @@ from mattslib.cache import ttl_cache
 from mattslib.config import ConfigError, load_config
 from mattslib.files import atomic_write, chunked, file_hash
 from mattslib.logs import JsonFormatter, setup_logging
+from mattslib.registry import Registry
 from mattslib.retry import async_retry, retry
 from mattslib.timing import Timer, timed
 
 # ========================================
 # 📂 Package Metadata
 # ========================================
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 __author__ = "Mathew Varghese"
 
 # ========================================
@@ -55,6 +60,7 @@ __author__ = "Mathew Varghese"
 __all__ = [
     "ConfigError",
     "JsonFormatter",
+    "Registry",
     "Timer",
     "async_retry",
     "atomic_write",
