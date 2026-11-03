@@ -9,7 +9,7 @@ description = "A small, well-tested library of reusable Python utilities: retrie
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
-authors = [{ name = "Mathew Varghese", email = "removed@example.invalid" }]
+authors = [{ name = "Mathew Varghese" }]
 keywords = ["utilities", "retry", "logging", "config", "cache"]
 classifiers = [
   "Programming Language :: Python :: 3",

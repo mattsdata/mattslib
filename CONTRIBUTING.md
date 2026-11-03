@@ -25,7 +25,7 @@ is for, why it is designed the way it is, and how it has changed over time.
 #  mattslib :: <module>
 # --------------------------------------------------------------------------------------------------
 #  File         : src/mattslib/<module>.py
-#  Author       : Mathew Varghese <removed@example.invalid>
+#  Author       : Mathew Varghese
 #  Created      : YYYY-MM-DD
 #  Version      : V1.0
 #  License      : MIT (see LICENSE)
